@@ -1,0 +1,12 @@
+feature_name,feature_group,exact_definition,lookback_window,annualised,information_available_at_prediction_time,expected_interpretation
+log_return_1d,Return,ln(Adjusted Close_t / Adjusted Close_(t-1)),2 prices / 1 return,No,Adjusted closes at t and t-1,One-day continuously compounded return
+return_5d,Return,Sum of log_return_1d from t-4 through t,5 trading days,No,Returns ending at t,Short-horizon cumulative return
+return_20d,Return,Sum of log_return_1d from t-19 through t,20 trading days,No,Returns ending at t,Medium-horizon cumulative return
+volatility_5d,Volatility and risk,Sample standard deviation of the latest 5 daily logarithmic returns × sqrt(252),5 trading days,Yes,Returns ending at t,Recent annualised return variability
+volatility_20d,Volatility and risk,Sample standard deviation of the latest 20 daily logarithmic returns × sqrt(252),20 trading days,Yes,Returns ending at t,Medium-horizon annualised return variability
+downside_volatility_20d,Volatility and risk,"sqrt(mean(min(log_return, 0)^2) over 20 days) × sqrt(252)",20 trading days,Yes,Returns ending at t,Annualised magnitude of recent negative returns
+price_to_ma_10,Momentum,Adjusted Close_t / mean(Adjusted Close from t-9 through t) − 1,10 trading days,No,Adjusted closes ending at t,Distance above or below the short moving average
+price_to_ma_50,Momentum,Adjusted Close_t / mean(Adjusted Close from t-49 through t) − 1,50 trading days,No,Adjusted closes ending at t,Distance above or below the medium moving average
+rsi_14,Momentum,"100 − 100 / (1 + average gain / average loss), using adjusted-close changes",14 trading days,No,Adjusted-close changes ending at t,Momentum balance from 0 to 100
+volume_ratio_20d,Volume and range,Volume_t / mean(Volume from t-19 through t),20 trading days,No,Volumes ending at t,Current activity relative to recent trading volume
+intraday_range,Volume and range,(High_t − Low_t) / Close_t,Current trading day,No,"High, Low and Close at t",Current intraday price range relative to closing price

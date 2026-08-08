@@ -1,0 +1,3 @@
+model,classification_threshold,accuracy,balanced_accuracy,precision,recall,f1_score,roc_auc,average_precision,true_negative,false_positive,false_negative,true_positive
+DummyClassifier,0.5,0.7213855421686747,0.5,0.0,0.0,0.0,0.5,0.2786144578313253,958,0,370,0
+LogisticRegression,0.5,0.7673192771084337,0.7524657225074762,0.564755838641189,0.7189189189189189,0.6325802615933412,0.8096259098346781,0.6323563262073739,753,205,104,266

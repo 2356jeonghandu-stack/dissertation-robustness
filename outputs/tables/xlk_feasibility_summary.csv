@@ -1,0 +1,28 @@
+metric,value
+ticker,XLK
+first_observation_date,2000-01-03
+last_observation_date,2026-06-30
+raw_sample_size,6662
+valid_sample_size_before_purging,6637
+final_modelling_sample_size,6632
+original_split_date_first_test_observation,2021-03-10
+provisional_training_sample_size,5309
+final_training_sample_size_after_purging,5304
+unchanged_test_sample_size,1328
+purged_observation_count,5
+purged_observation_dates,2021-03-03; 2021-03-04; 2021-03-05; 2021-03-08; 2021-03-09
+training_75th_percentile_threshold,0.036189313455602536
+final_sample_class_0_count,4936
+final_sample_class_0_proportion,0.744270205066345
+final_sample_class_1_count,1696
+final_sample_class_1_proportion,0.255729794933655
+training_class_0_count,3978
+training_class_0_proportion,0.75
+training_class_1_count,1326
+training_class_1_proportion,0.25
+test_class_0_count,958
+test_class_0_proportion,0.7213855421686747
+test_class_1_count,370
+test_class_1_proportion,0.2786144578313253
+duplicate_dates,0
+missing_values_by_column,Adj Close: 0; Close: 0; High: 0; Low: 0; Open: 0; Volume: 0

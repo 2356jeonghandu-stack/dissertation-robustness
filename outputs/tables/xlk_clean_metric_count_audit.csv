@@ -1,0 +1,4 @@
+ticker,model,classification_threshold,principal_model,counted_in_validation_clean_metric_row_count,schema_note,accuracy,balanced_accuracy,precision,recall,f1_score,roc_auc,average_precision,true_negative,false_positive,false_negative,true_positive
+XLK,Dummy Classifier,0.5,False,False,Intentional auxiliary baseline with a different schema; excluded from the principal-model count.,0.7213855421686747,0.5,0.0,0.0,0.0,0.5,0.2786144578313253,958,0,370,0
+XLK,Logistic Regression,0.5,True,True,Principal clean model included in the validation count.,0.7673192771084337,0.7524657225074762,0.564755838641189,0.7189189189189189,0.6325802615933412,0.8096259098346781,0.6323563262073739,753,205,104,266
+XLK,Random Forest,0.5,True,True,Principal clean model included in the validation count.,0.7703313253012049,0.7346470687806805,0.5775656324582339,0.654054054054054,0.6134347275031685,0.8044715905885008,0.6370969413832709,781,177,128,242

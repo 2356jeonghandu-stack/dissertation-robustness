@@ -1,0 +1,50 @@
+# Raw and processed data (retain directory placeholders)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables
+.env
+.env.*
+
+# Local-only evidence and browser artefacts
+parent_communication_evidence/
+.playwright/
+
+# Test and coverage artefacts
+.coverage
+htmlcov/
+coverage.xml
+
+# Common editor temporary files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.tmp
+*.temp
+
+# Local research drafts that are not part of the reproducible repository
+writing/supervisor_meeting_brief_*.docx

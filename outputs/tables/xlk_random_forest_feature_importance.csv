@@ -1,0 +1,12 @@
+feature_name,feature_group,importance
+volatility_20d,Volatility and risk,0.23788986549994373
+downside_volatility_20d,Volatility and risk,0.2159941598022991
+intraday_range,Volume and range,0.14622464950085956
+volatility_5d,Volatility and risk,0.12032810676068743
+price_to_ma_50,Momentum,0.06569853182942197
+return_20d,Return,0.05018046901119027
+price_to_ma_10,Momentum,0.043704012270446964
+return_5d,Return,0.03827639874790538
+rsi_14,Momentum,0.030869555289162593
+log_return_1d,Return,0.02578182153360158
+volume_ratio_20d,Volume and range,0.0250524297544814

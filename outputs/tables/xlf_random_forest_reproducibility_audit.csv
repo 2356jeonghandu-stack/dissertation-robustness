@@ -1,0 +1,22 @@
+check,stored,fresh,difference,status
+ticker,XLF,XLF,,match
+predictor_names,log_return_1d | return_5d | return_20d | volatility_5d | volatility_20d | downside_volatility_20d | price_to_ma_10 | price_to_ma_50 | rsi_14 | volume_ratio_20d | intraday_range,log_return_1d | return_5d | return_20d | volatility_5d | volatility_20d | downside_volatility_20d | price_to_ma_10 | price_to_ma_50 | rsi_14 | volume_ratio_20d | intraday_range,,match
+predictor_order,identical,identical,,match
+training_indices_order,identical,identical,,match
+hyperparameters,"{'bootstrap': True, 'class_weight': 'balanced_subsample', 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 500, 'n_jobs': -1, 'random_state': 42}","{'bootstrap': True, 'class_weight': 'balanced_subsample', 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 500, 'n_jobs': -1, 'random_state': 42}",,match
+random_state,42,42,0,match
+class_weight,balanced_subsample,balanced_subsample,,match
+n_estimators,500,500,0,match
+n_jobs,-1,-1,0,match
+fresh_refit_repeatability_max_abs_probability_difference,,3.3306690738754696e-16,3.3306690738754696e-16,deterministic
+stored_probability_vector_available,no persisted probability vector found,fresh probability vector available,not directly comparable,limitation
+stored_confusion_matrix_inferred,"TN=1075, FP=86, FN=110, TP=57","TN=1075, FP=86, FN=109, TP=58","TN=0, FP=0, FN=-1, TP=1",differs
+prediction_threshold,0.5,0.5,0,match
+software_versions,unknown historical build,sklearn=1.5.1; numpy=1.26.4; pandas=2.2.2,likely version/environment drift,plausible cause
+accuracy_difference,0.8524096385542169,0.8531626506024096,0.0007530120481926694,numeric drift
+balanced_accuracy_difference,0.6336216455976935,0.6366156575737414,0.0029940119760478723,numeric drift
+precision_difference,0.3986013986013986,0.4027777777777778,0.004176379176379197,numeric drift
+recall_difference,0.3413173652694611,0.3473053892215569,0.0059880239520958,numeric drift
+f1_score_difference,0.3677419354838709,0.3729903536977492,0.005248418213878281,numeric drift
+roc_auc_difference,0.7735124067111256,0.7731101105282974,-0.00040229618282827673,numeric drift
+average_precision_difference,0.3864464632234789,0.38651788623117656,7.142300769763521e-05,numeric drift
